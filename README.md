@@ -36,7 +36,8 @@ done < ${metadata}
 What if our workflow starts from the barcode subdirectories, contanetanes the reads, labels them, and feeds into the downstream analyses. This will make our workflow fully automated from the start to the end.
 
 
-Here, I demonstrate how it can be done using Nextflow workflow manager.
+> Here, I demonstrate how it can be done using Nextflow workflow manager.
+
 
 
 ## **Requirements**
