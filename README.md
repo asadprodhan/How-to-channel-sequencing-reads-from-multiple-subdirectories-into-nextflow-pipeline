@@ -204,7 +204,11 @@ nextflow nextflow.nf
 
 
 > You may require specifying DSL2 in the config file as follows:
+
+
+
+```
 nextflow.enable.dsl=2
 
-
+```
 
