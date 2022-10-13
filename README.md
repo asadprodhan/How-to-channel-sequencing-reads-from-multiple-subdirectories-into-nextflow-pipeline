@@ -46,18 +46,18 @@ A csv file that has barcode names in Column 1 and corresponding sample names in 
 
 
 ```
-barcode01	sampleA
-barcode02	sampleB
-barcode03	sampleC
-barcode04	sampleD
-barcode05	sampleE
-barcode06	sampleF
-barcode07	sampleG
-barcode08	sampleH
-barcode09	sampleI
-barcode10	sampleJ
-barcode11	sampleK
-barcode12	sampleL
+barcode01	sample1
+barcode02	sample2
+barcode03	sample3
+barcode04	sample4
+barcode05	sample5
+barcode06	sample6
+barcode07	sample7
+barcode08	sample8
+barcode09	sample9
+barcode10	sample10
+barcode11	sample11
+barcode12	sample12
 
 ```
 
