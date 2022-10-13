@@ -45,6 +45,7 @@ Here, I demonstrate how it can be done using Nextflow workflow manager.
 A csv file that has barcode names in Column 1 and corresponding sample names in Column 2:
 
 
+```
 barcode01	sampleA
 barcode02	sampleB
 barcode03	sampleC
@@ -58,12 +59,15 @@ barcode10	sampleJ
 barcode11	sampleK
 barcode12	sampleL
 
+```
+
 
 
 ## **A Nextflow script**
 
 
 This script contanetanes the reads barcode-wise, labels them taking information from the above metadata, and feeds them into the downstream fastqc analysis. More analyses can be added on.
+
 
 
 ```
@@ -143,6 +147,10 @@ workflow {
 ## **A Nextflow config file**
 
 
+The config file provides the containerised software to execulte the fastqc analysis. This avoids installing the fastqc software in the local computer. For concatenation step, no container i.e. additional software is needed as ‘cat’ is a standard Linux utility.
+
+
+
 ```
 
 params.repdir = './reports'
@@ -175,18 +183,15 @@ docker {
 ```
 
 
-> It provides containerised softwares to execulte the fastqc analysis. This avoids installing the fastqc software in the local computer. For concatenation, no container i.e. additional software is needed as ‘cat’ is a standard Linux utility.
-
-
 
 ## **How to carry out the workflow**
 
 
 
-Keep the metadata.csv file, nextflow script and the config file in the same directory where the barcode sub-directories are. 
+- Keep the metadata.csv file, nextflow script and the config file in the same directory where the barcode sub-directories are. 
 
 
-Then run the script as follows:
+- Then run the script as follows:
 
 
 ```
